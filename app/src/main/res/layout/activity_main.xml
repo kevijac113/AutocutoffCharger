@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/png1"
+    tools:context="com.example.kevin.charger.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:text="CONNECT WITH BLUETOOTH HC-05 TO START"
+        android:textAppearance="@android:style/TextAppearance.Inverse"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="paired devices"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="187dp"
+        android:layout_below="@+id/text"
+        android:layout_alignStart="@+id/text" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/find"
+        android:layout_alignEnd="@+id/search"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:text="discover device"
+        android:layout_alignBaseline="@+id/find"
+        android:layout_alignBottom="@+id/find"
+        android:layout_alignEnd="@+id/text" />
+
+</RelativeLayout>

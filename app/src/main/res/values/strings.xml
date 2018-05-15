@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Charger</string>
+    <string name="textview">TextView</string>
+    <string name="click_to_check_battery">Click to check battery</string>
+</resources>
